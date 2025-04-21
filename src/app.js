@@ -1,6 +1,6 @@
-import { createBot } from "@builderbot/bot";
-import { provider } from "./provider/index.js";
-import { database } from "./database/index.js";
+import BotWhatsapp from "@bot-whatsapp/bot";
+import provider from "./provider/index.js";
+import database from "./database/index.js";
 import flow from "./flow/index.js";
 import { createExpressServer } from "./http/index.js"; // Importación modificada
 
@@ -9,7 +9,7 @@ const main = async () => {
 	const { app, httpServer } = createExpressServer();
 
 	// Inicializar el bot con el mismo servidor HTTP
-	await createBot({
+	BotWhatsapp.createBot({
 		flow,
 		provider,
 		database,

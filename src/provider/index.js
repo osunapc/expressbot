@@ -1,4 +1,4 @@
-import { createProvider } from "@builderbot/bot";
-import { BaileysProvider } from "@builderbot/provider-baileys";
+import BotWhatsapp from "@bot-whatsapp/bot";
+import BaileysProvider from "@bot-whatsapp/provider/baileys";
 
-export const provider = createProvider(BaileysProvider);
+export default BotWhatsapp.createProvider(BaileysProvider);

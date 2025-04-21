@@ -1,5 +1,5 @@
-import { addKeyword } from "@builderbot/bot";
+import BotWhatsapp from "@bot-whatsapp/bot";
 
-export default addKeyword(["gracias", "grac"]).addAnswer(
+export default BotWhatsapp.addKeyword(["gracias", "grac"]).addAnswer(
 	"Vale estamos a la orden"
 );

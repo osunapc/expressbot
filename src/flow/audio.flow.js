@@ -1,4 +1,4 @@
-import { addKeyword } from "@builderbot/bot";
+import BotWhatsapp from "@bot-whatsapp/bot";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as fs from "fs";
 import "dotenv/config";
@@ -7,7 +7,7 @@ import context from "../contextAi/contextAi.js";
 const ai = new GoogleGenerativeAI({ apiKey: process.env.GEMINI_API_KEY });
 const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-export default addKeyword(["audio"]).addAnswer(
+export default BotWhatsapp.addKeyword(["audio"]).addAnswer(
 	"🎧 Dame un segundo para escucharte...",
 	null,
 	async (ctx, { flowDynamic, fallBack }) => {

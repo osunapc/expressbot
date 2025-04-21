@@ -1,8 +1,8 @@
 // Flujo para crear cliente
-import { addKeyword } from "@builderbot/bot";
+import BotWhatsapp from "@bot-whatsapp/bot";
 import { crearCiente } from "../funciones/crearCliente.js";
 
-export default addKeyword([
+export default BotWhatsapp.addKeyword([
 	"crear cliente",
 	"nuevo cliente",
 	"registrar cliente",

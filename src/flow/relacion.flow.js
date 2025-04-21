@@ -1,7 +1,7 @@
-import { addKeyword } from "@builderbot/bot";
+import BotWhatsapp from "@bot-whatsapp/bot";
 import { crearRelacion } from "../funciones/creerRelacion.js";
 
-export default addKeyword([
+export default BotWhatsapp.addKeyword([
 	"crear relacion",
 	"nueva relacion",
 	"relacion",

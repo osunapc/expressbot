@@ -1,3 +1,3 @@
-import { MemoryDB } from "@builderbot/bot";
+import MockAdapter from "@bot-whatsapp/database/mock";
 
-export const database = new MemoryDB();
+export default new MockAdapter();

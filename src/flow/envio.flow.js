@@ -1,4 +1,4 @@
-import { addKeyword } from "@builderbot/bot";
+import BotWhatsapp from "@bot-whatsapp/bot";
 import "dotenv/config";
 import obtenerPrecioDolar from "../funciones/bcv.js";
 import { calcularDistanciaEnKm } from "../funciones/calcularDistancia.js";
@@ -137,7 +137,7 @@ Ejemplo de respuesta:
 15. si`;
 
 // Flujo principal para crear un envío
-export default addKeyword([
+export default BotWhatsapp.addKeyword([
 	"crear envio",
 	"crear pedido",
 	"nuevo envio",
